@@ -1,0 +1,296 @@
+/* ### 版面設計 ### */
+:root {
+  --caramel: #A47149;
+  --milk-tea: #D7B59F;
+  --butter-white: #FFF8F0;
+  --almond: #F3E7D3;
+  --ginger-yellow: #EFC98C;
+  --sakura-pink: #F6C5C0;
+  --mint-green: #CBE8CC;
+}
+
+body {
+  margin: 24px 10px;
+  background-color: var(--butter-white);
+  color: var(--mint-green);
+  font-family: 'Fredoka', '思源圓體', sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+#container {
+  width: 960px;
+  margin: auto;
+}
+
+/* --- Header 區域 --- */
+header {
+  background-color: var(--milk-tea);
+  border-radius: 20px;
+  padding: 20px 30px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+#site {
+  float: left;
+}
+
+#site h1 {
+  font-size: 50px;
+  color: var(--caramel);
+  margin: 0;
+  font-family: 'Fredoka', '思源圓體', sans-serif;
+}
+
+#site img {
+  vertical-align: bottom;
+  width: 332px;
+}
+
+/* --- Nav 區域 --- */
+nav {
+  float: right;
+  padding-top: 30px;
+  font-family: 'Maven Pro', 'Fredoka', sans-serif;
+  font-size: 15px;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 15px;
+}
+
+nav li {
+  list-style: none;
+}
+
+nav a {
+  display: block;
+  margin-top: 20px;
+  margin-left: 20px;
+  text-decoration: none;
+  border-bottom: solid 3px transparent;
+  color: #000;
+  transition: all 0.3s;
+  padding: 8px 15px;
+  border-radius: 12px;
+}
+
+nav a:hover {
+  border-bottom-color: var(--sakura-pink);
+  background-color: var(--sakura-pink);
+  color: #fff;
+}
+
+/* --- Headerpost 區域 --- */
+#headerpost {
+  margin-bottom: 30px;
+  background-color: var(--milk-tea);
+  overflow: hidden;
+}
+
+#headerpost img {
+  float: left;
+  vertical-align: bottom;
+  width: 300px;
+}
+
+#headerpost #lead {
+  float: left;
+  width: 300px;
+  background-color: var(--milk-tea); /* 修正 background color -> background-color */
+  margin-left: 25px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+#headerpost h2 {
+  margin: 20px 0;
+}
+
+#headerpost .more {
+  font-size: 18px;
+  font-family: 'Maven Pro', Helvetica, Arial, sans-serif;
+  text-align: right;
+}
+
+#headerpost .more a {
+  color: var(--caramel);
+  background-image: url(img/more.png);
+  background-size: 28px;
+  background-repeat: no-repeat;
+  background-position: right center;
+  display: block;
+  padding: 10px 40px 10px 0;
+  text-decoration: none;
+}
+
+/* --- Content 區域 --- */
+#content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.post {
+  background-color: var(--almond);
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  width: 200px;
+  text-align: center;
+}
+
+.post:hover {
+  transform: translateY(-5px);
+}
+
+.post img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid var(--milk-tea);
+  vertical-align: bottom;
+}
+
+.post h2 {
+  font-size: 18px;
+  color: var(--caramel);
+  margin: 10px 0 5px 0;
+}
+
+.post p, .post .data, .post .more_s {
+  font-size: 14px;
+  color: #5C4033;
+  margin: 5px 10px;
+}
+
+.post .data {
+  float: left;
+}
+
+.post .more_s {
+  float: right;
+  font-weight: bold;
+  background-color: var(--ginger-yellow);
+  background-image: url(img/more.png);
+  background-size: 16px;
+  background-repeat: no-repeat;
+  background-position: 94% 50%;
+  padding: 3px 25px 3px 5px;
+  border-radius: 12px;
+  font-size: 14px;
+  font-family: 'Maven Pro', Helvetica, Arial, sans-serif;
+  color: #fff;
+  margin: 0;
+  transition: background-color 0.3s ease;
+}
+
+.post .more_s:hover {
+  background-color: var(--sakura-pink);
+}
+
+.post a {
+  color: #000;
+  text-decoration: none;
+  display: block;
+  overflow: hidden;
+  transition: background-color 0.3s;
+}
+
+.post a:hover {
+  background-color: var(--almond);
+}
+
+/* --- Footer 區域 --- */
+footer {
+  background-color: var(--milk-tea);
+  padding: 30px 20px;
+  border-radius: 20px;
+  margin-top: 40px;
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+footer p {
+  font-family: 'Fredoka', '思源圓體', sans-serif;
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: var(--caramel);
+}
+
+/* --- Footer 小圖示 --- */
+#iconmenu {
+  margin-bottom: 20px;
+}
+
+#iconmenu ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+#iconmenu li {
+  list-style: none;
+}
+
+#iconmenu img {
+  width: 32px;
+  height: 32px;
+  transition: transform 0.3s ease;
+}
+
+#iconmenu img:hover {
+  transform: scale(1.2);
+}
+
+/* --- Footer 小選單 --- */
+#submenu {
+  margin-bottom: 10px;
+}
+
+#submenu ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+#submenu li {
+  list-style: none;
+}
+
+#submenu a {
+  font-family: 'Maven Pro', 'Fredoka', sans-serif;
+  font-size: 14px;
+  text-decoration: none;
+  color: var(--caramel);
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+#submenu a:hover {
+  background-color: var(--mint-green);
+  color: white;
+}
+
+small {
+  display: block;
+  font-size: 12px;
+  color: var(--caramel);
+  margin-top: 10px;
+}
